@@ -1,0 +1,60 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  background-color: var(--primary-background-color);
+  color: var(--primary-text-color);
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+}
+/* Сброс геометрии элементов по - умолчанию. */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul,
+ol {
+  padding-left: 0;
+  list-style: none;
+  list-style-type: none;
+}
+/* Задан, чтобы убрать нижний отступ у картинок */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+a {
+  color: var(--title-text-color);
+  text-decoration: none;
+}
+
+.container {
+  width: 1110px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
