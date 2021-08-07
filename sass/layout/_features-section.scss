@@ -1,0 +1,30 @@
+.features {
+  @extend %section-paddings;
+  background-color: var(--section-background-color);
+}
+.features__title {
+  @include fontSource(Lato, normal, 900, 24px, 1.38);
+  margin-bottom: 40px;
+
+  color: var(--title-color);
+}
+.features__subtitle {
+  @include fontSource(Merriweather, normal, 900, 48px, 1.44);
+  margin-bottom: 100px;
+
+  color: var(--subtitle-color);
+}
+.features__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+.features__item {
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 30px;
+  flex-basis: calc((100% - 90px) / 3);
+}
+.features__picture {
+}

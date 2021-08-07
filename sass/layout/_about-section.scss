@@ -1,0 +1,68 @@
+.about {
+  @extend %section-paddings;
+}
+.about__content-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.about__title {
+  @extend %title-text;
+}
+.about__subtitle {
+  @include fontSource(Merriweather, normal, 900, 48px, 1.44);
+  width: 350px;
+  margin-bottom: 60px;
+
+  color: var(--subtitle-color);
+}
+.about__subtitle--colored {
+  color: var(--accent-color);
+}
+.about__text-wrapper {
+}
+.about__text {
+  @include fontSource(Lato, normal, 300, 18px, 1.39);
+  max-width: 400px;
+}
+.about__list-wrapper {
+  //   margin-left: auto;
+  max-width: 50%;
+}
+.about__list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-top: -30px;
+  margin-left: -30px;
+  height: 100%;
+}
+.about__item {
+  margin-top: 30px;
+  margin-left: 30px;
+  flex-basis: calc((100% - 60px) / 2);
+
+  background-color: var(--section-background-color);
+}
+.about__content-block {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  margin-left: 40px;
+}
+.deals__number {
+  @include fontSource(Lato, normal, 900, 55px, 1.2);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.deals__text {
+  max-width: 110px;
+  @include fontSource(Lato, normal, bold, 14px, 1.29);
+  letter-spacing: normal;
+  text-transform: unset;
+  margin-bottom: 50px;
+}
+.about__link {
+  @include fontSource(Lato, normal, bold, 14px, 1.29);
+  margin-bottom: 40px;
+}

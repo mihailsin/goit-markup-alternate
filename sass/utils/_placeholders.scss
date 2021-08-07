@@ -1,0 +1,10 @@
+%section-paddings {
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+%title-text {
+  @include fontSource(Lato, normal, 900, 24px, 1.38);
+  margin-bottom: 40px;
+
+  color: var(--title-color);
+}
