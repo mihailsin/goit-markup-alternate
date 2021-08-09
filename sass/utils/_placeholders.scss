@@ -2,9 +2,14 @@
   padding-top: 140px;
   padding-bottom: 140px;
 }
-%title-text {
+%title-style {
   @include fontSource(Lato, normal, 900, 24px, 1.38);
   margin-bottom: 40px;
 
   color: var(--title-color);
+}
+%subtitle-style {
+  @include fontSource(Merriweather, normal, 900, 48px, 1.44);
+
+  color: var(--subtitle-color);
 }

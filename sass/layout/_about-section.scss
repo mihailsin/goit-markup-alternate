@@ -6,7 +6,7 @@
   justify-content: space-between;
 }
 .about__title {
-  @extend %title-text;
+  @extend %title-style;
 }
 .about__subtitle {
   @include fontSource(Merriweather, normal, 900, 48px, 1.44);
@@ -25,7 +25,6 @@
   max-width: 400px;
 }
 .about__list-wrapper {
-  //   margin-left: auto;
   max-width: 50%;
 }
 .about__list {

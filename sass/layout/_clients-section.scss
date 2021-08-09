@@ -1,0 +1,16 @@
+.clients {
+  @extend %section-paddings;
+
+  background-color: var(--section-background-color);
+}
+.clients__title {
+  @extend %title-style;
+}
+.clients__subtitle {
+  @extend %subtitle-style;
+  margin-bottom: 80px;
+}
+.clients__list {
+  display: flex;
+  justify-content: space-between;
+}

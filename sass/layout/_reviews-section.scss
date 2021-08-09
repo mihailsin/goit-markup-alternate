@@ -1,0 +1,36 @@
+.reviews {
+  @extend %section-paddings;
+}
+.reviews__title {
+  @extend %title-style;
+}
+.reviews__subtitle {
+  @extend %subtitle-style;
+  margin-bottom: 80px;
+}
+.comment-card {
+  padding: 45px 95px;
+
+  background-color: var(--section-background-color);
+}
+.comment-card__content {
+  @include fontSource(Lato, normal, 300, 18px, 1.39);
+
+  margin-bottom: 58px;
+}
+.comment-card__inner-wrapper {
+  display: flex;
+  align-items: center;
+}
+.comment-card__picture {
+}
+.comment-card__meta-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 35px;
+}
+.comment-card__name {
+  margin-bottom: 10px;
+}
+.comment-card__meta {
+}

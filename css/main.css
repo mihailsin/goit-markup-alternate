@@ -70,12 +70,12 @@ a {
   margin: 0 auto;
 }
 
-.features, .about {
+.features, .about, .clients, .reviews {
   padding-top: 140px;
   padding-bottom: 140px;
 }
 
-.about__title {
+.about__title, .clients__title, .reviews__title {
   font-family: Lato;
   font-style: normal;
   font-weight: 900;
@@ -83,6 +83,15 @@ a {
   line-height: 1.38;
   margin-bottom: 40px;
   color: var(--title-color);
+}
+
+.clients__subtitle, .reviews__subtitle {
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 1.44;
+  color: var(--subtitle-color);
 }
 
 .header__flexed-container {
@@ -377,5 +386,64 @@ a {
   font-size: 14px;
   line-height: 1.29;
   margin-bottom: 40px;
+}
+
+.clients {
+  background-color: var(--section-background-color);
+}
+
+.clients__subtitle {
+  margin-bottom: 80px;
+}
+
+.clients__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.reviews__subtitle {
+  margin-bottom: 80px;
+}
+
+.comment-card {
+  padding: 45px 95px;
+  background-color: var(--section-background-color);
+}
+
+.comment-card__content {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.39;
+  margin-bottom: 58px;
+}
+
+.comment-card__inner-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.comment-card__meta-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 35px;
+}
+
+.comment-card__name {
+  margin-bottom: 10px;
 }
 /*# sourceMappingURL=main.css.map */
