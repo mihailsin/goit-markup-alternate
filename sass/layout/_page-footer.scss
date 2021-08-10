@@ -1,0 +1,76 @@
+.page-footer {
+  @extend %section-paddings;
+
+  color: var(--footer-text-color);
+  background-color: var(--primary-text-color);
+}
+.container--footer-flexed {
+  display: flex;
+  justify-content: space-between;
+
+  width: 1110px;
+  margin: 0 auto;
+}
+.footer__content-wrapper {
+}
+.footer__title {
+  @extend %subtitle-style;
+
+  color: var(--inversed-text-color);
+}
+.footer__text {
+  @extend %content-style;
+}
+.footer__contacts {
+}
+.footer__item {
+}
+.footer__symbol {
+  fill: var(--inversed-text-color);
+}
+.footer__link {
+  color: var(--footer-text-color);
+  text-decoration: none;
+}
+.footer__form-wrapper {
+}
+.subscribe {
+  display: flex;
+  flex-direction: column;
+}
+.subscribe__user-id-wrapper {
+  display: flex;
+}
+.subscribe__user-name {
+  display: flex;
+  flex-direction: column;
+}
+.subscribe__user-surname {
+  display: flex;
+  flex-direction: column;
+}
+.subscribe__label {
+  @include fontSource(Lato, normal, normal, 16px, 1.38);
+
+  color: var(--inversed-text-color);
+}
+.subscribe__input {
+  border: 0;
+  border-bottom: 1px solid var(--inversed-text-color);
+
+  background-color: transparent;
+  color: var(--footer-text-color);
+}
+.subscribe__user-message {
+  display: flex;
+  flex-direction: column;
+}
+.subscribe__text {
+  border: 0;
+  border-bottom: 1px solid var(--inversed-text-color);
+
+  background-color: transparent;
+  color: var(--footer-text-color);
+}
+.subscribe__button {
+}

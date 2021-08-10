@@ -246,28 +246,55 @@
       </section>
     </main>
     <!-- PAGE-FOOTER -->
-    <footer>
-      <h2 class="footer__title">Связь с нами</h2>
-      <p class="footer__text">
-        У вас остались вопросы? Напишите нам - мы ответим в ближайшее время
-      </p>
-      <ul class="contacts">
-        <li class="contacts__item">
-          <a class="contacts__link" href="tel:+71112223344">+7 (111) 222-33-44</a>
-        </li>
-        <li class="contacts__item">
-          <a class="contacts__link" href="mailto:order@bu-one.ru">order@bu-one.ru</a>
-        </li>
-      </ul>
-      <form class="subscribe" action="">
-        <label class="subscribe__label" for="name">Имя</label>
-        <input class="subscribe__input" type="text" id="name" />
-        <label class="subscribe__label" for="surname">Фамилия</label>
-        <input class="subscribe__input" type="text" id="surname" />
-        <label class="subscribe__label" for="message">Сообщение</label>
-        <textarea class="subscribe__text" id="message"></textarea>
-        <button class="subscribe__button" type="button">Отправить сообщение</button>
-      </form>
+    <footer class="page-footer">
+      <div class="container--footer-flexed">
+        <div class="footer__content-wrapper">
+          <h2 class="footer__title">Связь с нами</h2>
+          <p class="footer__text">
+            У вас остались вопросы? Напишите нам - мы ответим в ближайшее время
+          </p>
+          <ul class="contacts footer__contacts">
+            <li class="contacts__item footer__item">
+              <a class="contacts__link footer__link" href="tel:+71112223344"
+                ><svg class="contacts__symbol footer__symbol">
+                  <use href="./images/symbol-defs.svg#icon-phone"></use></svg
+                >+7 (111) 222-33-44</a
+              >
+            </li>
+            <li class="contacts__item footer__item">
+              <a class="contacts__link footer__link" href="mailto:order@bu-one.ru"
+                ><svg class="contacts__symbol footer__symbol">
+                  <use href="./images/symbol-defs.svg#icon-envelope"></use></svg
+                >@buh-one.ru</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer__form-wrapper">
+          <form class="subscribe" action="">
+            <div class="subscribe__user-id-wrapper">
+              <div class="subscribe__user-name">
+                <label class="subscribe__label" for="name">Имя</label>
+              <input class="subscribe__input" type="text" id="name" placeholder="Иван" />
+              </div>
+              <div class="subscribe__user-surname">
+                <label class="subscribe__label" for="surname">Фамилия</label>
+              <input class="subscribe__input" type="text" id="surname" placeholder="Иванов" />
+              </div>
+              
+            </div>
+            <div class="subscribe__user-message">
+              <label class="subscribe__label" for="message">Сообщение</label>
+              <textarea
+                class="subscribe__text"
+                id="message"
+                placeholder="Ваше сообщение"
+              ></textarea>
+            </div>
+            <button class="subscribe__button" type="button">Отправить сообщение</button>
+          </form>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
