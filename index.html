@@ -94,37 +94,61 @@
             <li class="features__item">
               <picture class="features__picture">
                 <source srcset="./images/building.webp 1x, ./images/building@2x.webp 2x" />
-                <img src="./images/building.jpg" alt="high building"
+                <img
+                  class="lazyloading"
+                  data-src="./images/building.jpg"
+                  loading="lazy"
+                  alt="high building"
               /></picture>
             </li>
             <li class="features__item">
               <picture class="features__picture">
                 <source srcset="./images/building.webp 1x, ./images/building@2x.webp 2x" />
-                <img src="./images/building.jpg" alt="high building"
+                <img
+                  class="lazyloading"
+                  data-src="./images/building.jpg"
+                  loading="lazy"
+                  alt="high building"
               /></picture>
             </li>
             <li class="features__item">
               <picture class="features__picture">
                 <source srcset="./images/building.webp 1x, ./images/building@2x.webp 2x" />
-                <img src="./images/building.jpg" alt="high building"
+                <img
+                  class="lazyloading"
+                  data-src="./images/building.jpg"
+                  loading="lazy"
+                  alt="high building"
               /></picture>
             </li>
             <li class="features__item">
               <picture class="features__picture">
                 <source srcset="./images/building.webp 1x, ./images/building@2x.webp 2x" />
-                <img src="./images/building.jpg" alt="high building"
+                <img
+                  class="lazyloading"
+                  data-src="./images/building.jpg"
+                  loading="lazy"
+                  alt="high building"
               /></picture>
             </li>
             <li class="features__item">
               <picture class="features__picture">
                 <source srcset="./images/building.webp 1x, ./images/building@2x.webp 2x" />
-                <img src="./images/building.jpg" alt="high building"
+                <img
+                  class="lazyloading"
+                  data-src="./images/building.jpg"
+                  loading="lazy"
+                  alt="high building"
               /></picture>
             </li>
             <li class="features__item">
               <picture class="features__picture">
                 <source srcset="./images/building.webp 1x, ./images/building@2x.webp 2x" />
-                <img src="./images/building.jpg" alt="high building"
+                <img
+                  class="lazyloading"
+                  data-src="./images/building.jpg"
+                  loading="lazy"
+                  alt="high building"
               /></picture>
             </li>
           </ul>
@@ -195,22 +219,38 @@
           <ul class="clients__list" lang="en">
             <li class="clients__item">
               <a class="clients__link" href=""
-                ><img src="./images/microsoft.png" alt="company logo"
+                ><img
+                  class="lazyloading"
+                  data-src="./images/microsoft.png"
+                  loading="lazy"
+                  alt="company logo"
               /></a>
             </li>
             <li class="clients__item">
               <a class="clients__link" href=""
-                ><img src="./images/microsoft.png" alt="company logo"
+                ><img
+                  class="lazyloading"
+                  data-src="./images/microsoft.png"
+                  loading="lazy"
+                  alt="company logo"
               /></a>
             </li>
             <li class="clients__item">
               <a class="clients__link" href=""
-                ><img src="./images/microsoft.png" alt="company logo"
+                ><img
+                  class="lazyloading"
+                  data-src="./images/microsoft.png"
+                  loading="lazy"
+                  alt="company logo"
               /></a>
             </li>
             <li class="clients__item">
               <a class="clients__link" href=""
-                ><img src="./images/microsoft.png" alt="company logo"
+                ><img
+                  class="lazyloading"
+                  data-src="./images/microsoft.png"
+                  loading="lazy"
+                  alt="company logo"
               /></a>
             </li>
           </ul>
@@ -234,7 +274,11 @@
                 <source
                   srcset="./images/user-pic.webp 1x, ./images/user-pic@2x.webp 2x"
                   type="image/webp" />
-                <img src="./images/user-pic.jpg" alt="фото автора комментария"
+                <img
+                  class="lazyloading"
+                  data-src="./images/user-pic.jpg"
+                  loading="lazy"
+                  alt="фото автора комментария"
               /></picture>
               <div class="comment-card__meta-wrapper">
                 <h4 class="comment-card__name">Екатерина Иванова</h4>
@@ -275,13 +319,12 @@
             <div class="subscribe__user-id-wrapper">
               <div class="subscribe__user-name">
                 <label class="subscribe__label" for="name">Имя</label>
-              <input class="subscribe__input" type="text" id="name" placeholder="Иван" />
+                <input class="subscribe__input" type="text" id="name" placeholder="Иван" />
               </div>
               <div class="subscribe__user-surname">
                 <label class="subscribe__label" for="surname">Фамилия</label>
-              <input class="subscribe__input" type="text" id="surname" placeholder="Иванов" />
+                <input class="subscribe__input" type="text" id="surname" placeholder="Иванов" />
               </div>
-              
             </div>
             <div class="subscribe__user-message">
               <label class="subscribe__label" for="message">Сообщение</label>
@@ -296,5 +339,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/lazy-load.js" type="module"></script>
   </body>
 </html>
